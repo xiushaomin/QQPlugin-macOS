@@ -110,7 +110,7 @@ static char tkAutoReplyWindowControllerKey;         //  自动回复窗口的关
             break;
     }
     
-    NSString *revokeTipContent = [NSString stringWithFormat:@"TK 拦截到一条撤回消息:\n\t%@：%@", revokeUserName, revokeMsg];
+    NSString *revokeTipContent = [NSString stringWithFormat:@"拦截到一条撤回消息:\n\t%@：%@", revokeUserName, revokeMsg];
     if (msgModel.isSelfSend) {
         revokeTipContent = @"你 撤回了一条消息";
     }
